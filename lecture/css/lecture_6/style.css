@@ -10,13 +10,14 @@
 #mainContent{
     background-color: lightblue;
     height: 400px;
+    width: 100%;
+    display: flex;
 }
 
 #navigation{
     width: 25%;
     height: 100%;
     background-color: lightcoral;
-    padding: 10px 0px;
 }
 .navItem{
     background-color: lightgoldenrodyellow;
@@ -24,4 +25,13 @@
     margin: 10px;
     padding: 30px 0px 0px 20px;
     font-size: 25px;
+}
+#content{
+    width: 70%;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 20px;
 }
