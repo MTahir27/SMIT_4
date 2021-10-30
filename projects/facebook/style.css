@@ -219,7 +219,6 @@ a {
 
 .sidebarNav {
     list-style-type: none;
-    padding: 0px 10px;
 }
 
 
@@ -236,6 +235,7 @@ a {
 }
 
 .sidebarNav .sidebarItem .sidebarLink .iconImg {
+    min-width: 30px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -281,12 +281,16 @@ a {
 
 .mainSection .rightSidebar {
     width: 25%;
-    height: 100%;
-    background-color: cornflowerblue;
+    height: calc(100vh - 70px);
+    padding: 20px;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
 }
 
 .mainSection .rightSidebar .pizzaSection img {
     width: 100%;
+    border-radius: 10px;
 }
 
 .mainSection .rightSidebar .pizzaSection .sidebarLink:hover {
