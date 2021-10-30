@@ -36,6 +36,9 @@
     height: 100%;
 }
 
+
+/* Navbar Left Side Styling */
+
 .logo {
     width: 50px;
     margin-left: 20px;
@@ -75,6 +78,9 @@
     font-size: 1rem;
 }
 
+
+/* Navbar Menu Stying */
+
 .navbar-nav {
     display: flex;
     justify-content: space-evenly;
@@ -109,4 +115,62 @@
 
 .navbar-nav .nav-item .nav-link i {
     font-size: 2rem;
+}
+
+
+/* Navbar Right Side Styling */
+
+.navbar-right-nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    gap: 10px;
+}
+
+.navbar-right-nav .navbar-right-item {
+    width: 35px;
+    height: 35px;
+    background-color: rgb(0 0 0 / 30%);
+    border-radius: 50%;
+}
+
+.navbar-right-nav .navbar-right-item .navbar-right-link {
+    color: #0f0f0fad;
+    font-size: .9rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-right-link {
+    text-decoration: none;
+}
+
+.user-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.user-img>img {
+    width: 100%;
+    height: 100%;
+}
+
+.user-pic>p {
+    color: #000;
+    text-decoration: none;
 }
