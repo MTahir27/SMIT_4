@@ -352,10 +352,8 @@ a {
 
 .slider .slider-item .title {
     position: absolute;
-    left: 10px;
-    bottom: 10px;
+    bottom: 0px;
     color: #fff;
-    right: 10px;
 }
 
 
@@ -535,6 +533,19 @@ a {
     .nav-2 {
         display: none;
     }
+    /* Left Sidebar Styling */
+    .mainSection .leftSidebar {
+        width: 35%;
+    }
+    /* Right Sidebar Styling */
+    .mainSection .rightSidebar {
+        display: none;
+    }
+    /* Main Section Styling */
+    .mainSection main {
+        width: 60%;
+        margin-left: 35%;
+    }
 }
 
 
@@ -563,6 +574,19 @@ a {
     }
     .navbar-nav .nav-item .nav-link i {
         font-size: 1.5rem;
+    }
+    /* Left Sidebar Styling */
+    .mainSection .leftSidebar {
+        display: none;
+    }
+    /* Right Sidebar Styling */
+    .mainSection .rightSidebar {
+        display: none;
+    }
+    /* Main Section Styling */
+    .mainSection main {
+        width: 100%;
+        margin: 0%;
     }
 }
 
