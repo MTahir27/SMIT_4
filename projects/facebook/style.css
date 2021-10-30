@@ -183,6 +183,43 @@ body {
 }
 
 
+/* Main Section Styling Start Here */
+
+.mainSection {
+    display: flex;
+    width: 100%;
+    height: calc(100vh);
+}
+
+
+/* Left Sidebar Styling */
+
+.mainSection .leftSidebar {
+    width: 25%;
+    height: 100%;
+}
+
+
+/* Main Section Styling */
+
+.mainSection main {
+    width: 50%;
+    background-color: rgb(0 0 0 / 30%);
+}
+
+
+/* Right Sidebar Styling */
+
+.mainSection .rightSidebar {
+    width: 25%;
+    height: 100%;
+    background-color: cornflowerblue;
+}
+
+
+/* Mian Section Styling End Here */
+
+
 /* Media Quries */
 
 
