@@ -197,12 +197,17 @@ body {
 .mainSection .leftSidebar {
     width: 25%;
     height: 100%;
+    position: fixed;
+    height: calc(100vh - 70px);
+    left: 0px;
+    bottom: 0px;
 }
 
 
 /* Main Section Styling */
 
 .mainSection main {
+    margin-left: 25%;
     width: 50%;
     background-color: rgb(0 0 0 / 30%);
 }
