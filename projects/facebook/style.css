@@ -410,6 +410,26 @@ a {
     color: #000;
 }
 
+.catagory {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.catagory .photo>i {
+    color: green;
+}
+
+.catagory .friend>i {
+    color: blue;
+}
+
+.catagory .feeling>i {
+    color: yellowgreen;
+}
+
 
 /* Activity Section Styling End Here */
 
