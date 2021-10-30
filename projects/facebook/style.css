@@ -285,6 +285,18 @@ a {
     background-color: cornflowerblue;
 }
 
+.mainSection .rightSidebar .pizzaSection img {
+    width: 100%;
+}
+
+.mainSection .rightSidebar .pizzaSection .sidebarLink:hover {
+    background: none;
+}
+
+.mainSection .rightSidebar .pizzaSection .sidebarLink {
+    align-items: flex-start;
+}
+
 
 /* Mian Section Styling End Here */
 
