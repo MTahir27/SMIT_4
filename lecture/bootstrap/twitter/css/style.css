@@ -27,6 +27,20 @@ a:hover {
 }
 
 
+/* Button Styling */
+
+.btn {
+    padding: 10px 30px;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #00acee;
+}
+
+
 /* Navbar Styling Start Here */
 
 .nav .nav-item .nav-link {
