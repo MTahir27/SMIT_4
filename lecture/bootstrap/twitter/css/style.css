@@ -3,3 +3,24 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+
+/* Navbar Styling Start Here */
+
+.nav .nav-item .nav-link {
+    color: #000;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.nav .nav-item .nav-link.active {
+    color: #00acee;
+}
+
+.nav .nav-item .nav-link>i {
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
+
+
+/* Navbar Styling End Here */
