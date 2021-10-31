@@ -4,6 +4,28 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: #00acee;
+}
+
+
+/* Logo Styling */
+
+.logo {
+    color: #00acee;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.logo>i {
+    font-size: 3rem;
+}
+
 
 /* Navbar Styling Start Here */
 
