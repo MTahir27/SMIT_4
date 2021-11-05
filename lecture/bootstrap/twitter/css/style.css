@@ -33,6 +33,13 @@ a:hover {
 }
 
 
+/* FOrm Styling */
+
+input:focus {
+    box-shadow: none !important;
+}
+
+
 /* Logo Styling */
 
 .logo {
