@@ -59,7 +59,8 @@ img {
     text-transform: capitalize;
 }
 
-.nav .nav-item .nav-link.active {
+.nav .nav-item .nav-link.active,
+.nav .nav-item .nav-link:hover {
     color: #00acee;
 }
 
