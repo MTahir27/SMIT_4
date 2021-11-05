@@ -120,3 +120,21 @@ img {
 
 
 /* Right SIdebar Styling End Here */
+
+
+/* Main Menu Start Here */
+
+.home-link {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.home-link i {
+    color: #00acee;
+    font-size: 1.3rem;
+}
+
+
+/* Main Menu End Here */
