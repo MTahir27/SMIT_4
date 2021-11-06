@@ -15,10 +15,17 @@
 
     <script>
         // Get the Plus Button Element
+        let myCounter = 0;
         const plusButton = document.getElementById("plusButton");
         // Get H1 Element Value
         const result = document.getElementById("result");
         // Increase the Value of the content in the h1
+
+        // Anonymous Function
+        plusButton.addEventListener("click", function() {
+            myCounter = myCounter + 1;
+            result.innerHTML = myCounter + 1;
+        });
     </script>
 </body>
 
