@@ -100,7 +100,12 @@
         // Create a function that add two number
         function add(firstnumber, secondNumber) {
             const result = firstnumber + secondNumber;
-            return result;
+            // return result, 56;
+            return {
+                firstnumber,
+                secondNumber,
+                result: result,
+            };
         };
 
         const myResult = add(5, 3);
