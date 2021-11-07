@@ -11,7 +11,7 @@
 <body>
     <h1 id="result">0</h1>
     <button id="plusButton">+</button>
-    <button>-</button>
+    <button id="minusButton">-</button>
 
     <script>
         // Get the Plus Button Element
@@ -21,10 +21,18 @@
         const result = document.getElementById("result");
         // Increase the Value of the content in the h1
 
-        // Anonymous Function
+        // Anonymous Function (Without Name)
         plusButton.addEventListener("click", function() {
             myCounter = myCounter + 1;
-            result.innerHTML = myCounter + 1;
+            result.innerHTML = myCounter;
+        });
+
+        // Get the Minus Button Value
+        document.getElementById("minusButton");
+        // Decremnt Value Function
+        minusButton.addEventListener("click", function() {
+            myCounter = myCounter - 1;
+            result.innerHTML = myCounter;
         });
     </script>
 </body>
