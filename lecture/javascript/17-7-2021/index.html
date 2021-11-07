@@ -99,13 +99,14 @@
     <script>
         // Create a function that add two number
         function add(firstnumber, secondNumber) {
-            console.log('FirstNumber: ' + firstnumber, "SecondNumber : " + secondNumber);
+            const result = firstnumber + secondNumber;
+            return result;
         };
 
-        add(5, 3);
-        add(2, 4);
-        add(4, 5);
-        add(5, 7);
+        console.log(add(5, 3));
+        console.log(add(2, 4));
+        console.log(add(4, 5));
+        console.log(add(5, 7));
     </script>
 </body>
 
