@@ -58,11 +58,30 @@
             name: "Hamza Amir",
         }];
 
+        const myObject = {
+            // Property = Value
+            name: 'Muhammad Tahir',
+            age: 20,
+            country: 'Pakistsn',
+            // FUnction without name called anynomius function
+            eating: function() {
+                console.log('i eat every thing');
+            },
+            drinking() {
+                console.log('I drink Water');
+            },
+            friends: myFriends,
+        };
+
         console.log(myFriends);
         console.log(myFriends[1]);
         console.log(myFriends[1].name);
         console.log(myFriends[1].rollNo);
         console.log(myFriends[1].rollNo, myFriends[1].name);
+
+
+
+        console.log(myObject.friends);
     </script>
 </body>
 
