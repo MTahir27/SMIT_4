@@ -13,16 +13,19 @@
 
     <script>
         const result = document.getElementById('result');
-        const temp = 15;
+        const temp = 45;
 
         // If Condition
         if (temp < 20 && temp < 30) {
             result.innerHTML = "Please wear jacket before go outside";
         } else if (temp > 20 && temp < 30) {
             result.innerHTML = "Please wear mormal Shirt";
-        } else if (temp > 30) {
+        } else if (temp > 30 && temp < 40) {
             result.innerHTML = "Please wear T-Shirt";
+        } else {
+            result.innerHTML = "<i>Please</i> wear Something";
         }
+        // Safe
     </script>
 </body>
 
