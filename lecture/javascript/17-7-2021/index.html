@@ -1,147 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Object</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1 id="result">0</h1>
-    <input type="number" id="numberOne" placeholder="First Number">
-    <input type="number" id="numbberTwo" placeholder="Second Number">
+    <input type="number" id="numberOne" placeholder="First Number" />
+    <input type="number" id="numberTwo" placeholder="Second Number" />
     <button id="addButton">+</button>
     <button id="minusButton">-</button>
     <button id="multiplyButton">x</button>
     <button id="divideButton">/</button>
 
-
     <!-- Calculate JS -->
     <script>
-        // Input Calling
-        const inputOne = document.getElementById(numberOne);
-        const inputTwo = document.getElementById(numberTwo);
-        // Button Calling
-        const addButton = document.getElementById(addButton);
-        const minusButton = document.getElementById(minusButton);
-        const multiplyButton = document.getElementById(multiplyButton);
-        const divideButton = document.getElementById(divideButton);
+      // Input Calling
+      const inputOne = document.getElementById(numberOne);
+      const inputTwo = document.getElementById(numberTwo);
+      const result = document.getElementById(result);
+      // Button Calling
+      const addButton = document.getElementById(addButton);
+      const minusButton = document.getElementById(minusButton);
+      const multiplyButton = document.getElementById(multiplyButton);
+      const divideButton = document.getElementById(divideButton);
+
+      // Adding FUnction
+      addButton.onclick = function () {
+        const valueOne = parseInt(inputOne.value);
+        const valueTwo = parseInt(inputTwo.value);
+        result = valueOne + valueTwo;
+      };
     </script>
-
-
-
-
-
-
 
     <!-- Object Practice -->
     <script>
-        const mySelf = {
-            // Property = Value
-            name: 'Muhammad Tahir',
-            age: 20,
-            country: 'Pakistsn',
-            // FUnction without name called anynomius function
-            eating: function() {
-                console.log('i eat every thing');
-            },
-            drinking() {
-                console.log('I drink Water');
-            },
-        };
+      const mySelf = {
+        // Property = Value
+        name: "Muhammad Tahir",
+        age: 20,
+        country: "Pakistsn",
+        // FUnction without name called anynomius function
+        eating: function () {
+          console.log("i eat every thing");
+        },
+        drinking() {
+          console.log("I drink Water");
+        },
+      };
 
-        console.log(mySelf);
-        console.log(mySelf.age);
-        console.log(mySelf.eating());
-        console.log(mySelf.drinking());
+      console.log(mySelf);
+      console.log(mySelf.age);
+      console.log(mySelf.eating());
+      console.log(mySelf.drinking());
     </script>
-
 
     <!-- Array Prcatice -->
     <script>
-        const myStudents = ["Muhammad Tahir", "Hassan Asad", "Husanin"];
+      const myStudents = ["Muhammad Tahir", "Hassan Asad", "Husanin"];
 
-        console.log(myStudents);
-        console.log(myStudents[0]);
-        console.log(myStudents[1]);
-        console.log(myStudents[2]);
+      console.log(myStudents);
+      console.log(myStudents[0]);
+      console.log(myStudents[1]);
+      console.log(myStudents[2]);
     </script>
 
     <!-- Array with Object -->
     <script>
-        const myFriends = [{
-            rollNo: 0,
-            name: "Muhammad Tahir",
-        }, {
-            rollNo: 1,
-            name: "Husnain Shah",
-        }, {
-            rollNo: 2,
-            name: "Hassan Asas",
-        }, {
-            rollNo: 3,
-            name: "Hamza Amir",
-        }];
+      const myFriends = [
+        {
+          rollNo: 0,
+          name: "Muhammad Tahir",
+        },
+        {
+          rollNo: 1,
+          name: "Husnain Shah",
+        },
+        {
+          rollNo: 2,
+          name: "Hassan Asas",
+        },
+        {
+          rollNo: 3,
+          name: "Hamza Amir",
+        },
+      ];
 
-        const myObject = {
-            // Property = Value
-            name: 'Muhammad Tahir',
-            age: 20,
-            country: 'Pakistsn',
-            // FUnction without name called anynomius function
-            eating: function() {
-                console.log('i eat every thing');
-            },
-            drinking() {
-                console.log('I drink Water');
-            },
-            friends: myFriends,
-        };
+      const myObject = {
+        // Property = Value
+        name: "Muhammad Tahir",
+        age: 20,
+        country: "Pakistsn",
+        // FUnction without name called anynomius function
+        eating: function () {
+          console.log("i eat every thing");
+        },
+        drinking() {
+          console.log("I drink Water");
+        },
+        friends: myFriends,
+      };
 
-        console.log(myFriends);
-        console.log(myFriends[1]);
-        console.log(myFriends[1].name);
-        console.log(myFriends[1].rollNo);
-        console.log(myFriends[1].rollNo, myFriends[1].name);
+      console.log(myFriends);
+      console.log(myFriends[1]);
+      console.log(myFriends[1].name);
+      console.log(myFriends[1].rollNo);
+      console.log(myFriends[1].rollNo, myFriends[1].name);
 
+      console.log(myObject.friends);
 
+      const myPC = {
+        ram: 4,
+      };
 
-        console.log(myObject.friends);
-
-
-        const myPC = {
-            ram: 4,
-        }
-
-        console.log(myPC);
-        myPC.ram = 8;
-        console.log(myPC);
-        myPC.graphicCard = 2;
-        console.log(myPC);
+      console.log(myPC);
+      myPC.ram = 8;
+      console.log(myPC);
+      myPC.graphicCard = 2;
+      console.log(myPC);
     </script>
 
     <!-- Add two Number -->
     <script>
-        // Create a function that add two number
-        function add(firstnumber, secondNumber) {
-            const result = firstnumber + secondNumber;
-            // return result, 56;
-            return {
-                firstnumber,
-                secondNumber,
-                result: result,
-            };
+      // Create a function that add two number
+      function add(firstnumber, secondNumber) {
+        const result = firstnumber + secondNumber;
+        // return result, 56;
+        return {
+          firstnumber,
+          secondNumber,
+          result: result,
         };
+      }
 
-        const myResult = add(5, 3);
-        console.log(myResult);
-        // console.log(add(5, 3));
-        // console.log(add(2, 4));
-        // console.log(add(4, 5));
-        // console.log(add(5, 7));
+      const myResult = add(5, 3);
+      console.log(myResult);
+      // console.log(add(5, 3));
+      // console.log(add(2, 4));
+      // console.log(add(4, 5));
+      // console.log(add(5, 7));
     </script>
-</body>
-
+  </body>
 </html>
