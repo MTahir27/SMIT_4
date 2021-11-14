@@ -22,6 +22,7 @@
         document.getElementById('todoForm').addEventListener('submit', function(event) {
             event.preventDefault();
             const todoInput = document.getElementById('todoInput').value;
+            const todosList = document.getElementById('todos');
             todos.push(todoInput);
             console.log(todos);
             // const result = document.getElementById('result');
@@ -31,6 +32,10 @@
             for(let index = 0; index<todos.length; index++){
                 const element = todos[index];
                 console.log(element);
+                const newListItem = document.createElement('li');
+                newListItem.innerHTML = todos;
+                todosList.appendChild(newListItem);
+                console.log(newListItem);
             }
         });
     </script>
