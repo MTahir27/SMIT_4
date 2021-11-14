@@ -19,24 +19,37 @@
 
     <script>
         const todos = [];
-        document.getElementById('todoForm').addEventListener('submit', function(event) {
+        document.getElementById('todoForm').addEventListener('submit', function (event) {
             event.preventDefault();
             const todoInput = document.getElementById('todoInput').value;
             const todosList = document.getElementById('todos');
             todos.push(todoInput);
-            console.log(todos);
+            document.getElementById('todoInput').value = "";
+            console.log("todos: ", todos);
+            const newListItem = document.createElement('li');
+            newListItem.innerHTML = todoInput;
+            todosList.appendChild(newListItem);
+            // todos.innerHTML = "";
+            // const element = todos[index];
+            // console.log(element);
+            // const newListItem = document.createElement('li');
+            // newListItem.innerText = todos;
+            // todosList.appendChild(newListItem);
+            // console.log(newListItem);
+            // console.log(todos);
             // const result = document.getElementById('result');
             // result.innerHTML = todos;
-            console.log(todos.length);
+            // console.log(todos.length);
 
-            for(let index = 0; index<todos.length; index++){
-                const element = todos[index];
-                console.log(element);
-                const newListItem = document.createElement('li');
-                newListItem.innerHTML = todos;
-                todosList.appendChild(newListItem);
-                console.log(newListItem);
-            }
+            // for(let index = 0; index<todos.length; index++){
+
+            //     const element = todos[index];
+            //     // console.log(element);
+            //     const newListItem = document.createElement('li');
+            //     newListItem.innerText = todos;
+            //     todosList.appendChild(newListItem);
+            //     console.log(newListItem);
+            // }
         });
     </script>
 
