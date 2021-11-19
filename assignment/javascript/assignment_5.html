@@ -141,8 +141,16 @@
 
     <!-- Todo List -->
     <script>
-        const inputData = document.getElementById('inputData');
-        const addData = document.getElementById('submitData');
+        // const inputData = document.getElementById('inputData');
+        // const addData = document.getElementById('submitData');
+
+        document.onsubmit = function (evenet) {
+            evenet.preventDefault();
+
+            const inputData = document.getElementById('inputData').value;
+            const addData = document.getElementById('submitData');
+            console.log(inputData);
+        }
     </script>
 </body>
 
