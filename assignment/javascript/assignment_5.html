@@ -33,6 +33,37 @@
         main h1 {
             margin-bottom: 20px;
         }
+
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        form #inputData {
+            height: 40px;
+            padding: 10px;
+            border: 1px solid #dee2e6;
+            border-radius: 0px;
+            width: 100%;
+            outline: none;
+        }
+
+        form #submitData {
+            padding: 10px 20px;
+            border-radius: 0px;
+            border: none;
+            height: 40px;
+            background-color: #236a47;
+            color: #fff;
+            cursor: pointer;
+            border: 1px solid #236a47;
+        }
+
+        form #submitData:hover {
+            background-color: #fff;
+            color: #236a47;
+        }
     </style>
 </head>
 
@@ -42,8 +73,8 @@
     <main>
         <h1>Todo List</h1>
         <form>
-            <input type="text" placeholder="Enter Some Data">
-            <input type="submit" value="Add">
+            <input type="text" placeholder="Enter Some Data" id="inputData">
+            <input type="submit" value="Add" id="submitData">
         </form>
     </main>
 
