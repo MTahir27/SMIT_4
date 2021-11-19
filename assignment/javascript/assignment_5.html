@@ -129,7 +129,7 @@
 
     <main>
         <h1>Todo List</h1>
-        <form>
+        <form id="todoForm">
             <input type="text" placeholder="Enter Some Data" id="inputData">
             <input type="submit" value="Add" id="submitData">
         </form>
@@ -143,13 +143,16 @@
     <script>
         // const inputData = document.getElementById('inputData');
         // const addData = document.getElementById('submitData');
+        let todoArray = [];
+        console.log(todoArray);
 
-        document.onsubmit = function (evenet) {
+        document.getElementById('todoForm').onsubmit = function (evenet) {
             evenet.preventDefault();
 
             const inputData = document.getElementById('inputData').value;
             const addData = document.getElementById('submitData');
-            console.log(inputData);
+            todoArray.push(inputData);
+            console.log(todoArray);
         }
     </script>
 </body>
