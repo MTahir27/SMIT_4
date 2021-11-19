@@ -152,9 +152,11 @@
             // Get input Data & Submit Button
             const inputData = document.getElementById('inputData').value;
             const addData = document.getElementById('submitData');
-
+            // Clear inputtext after submit 
+            document.getElementById('inputData').value = '';
             // Send input in todoArray
             todoArray.push(inputData);
+
             console.log(todoArray);
 
             // Get ol
