@@ -156,7 +156,6 @@
             document.getElementById('inputData').value = '';
             // Send input in todoArray
             todoArray.push(inputData);
-
             console.log(todoArray);
 
             // Get ol
@@ -168,6 +167,12 @@
             todoList.innerText = inputData;
             // Make Child of todos (ol)
             todos.appendChild(todoList);
+
+
+            // Delete Button
+            const deleteBtn = document.createElement('button');
+            deleteBtn.classList.add('deleteBtn')
+            todoList.appendChild(deleteBtn);
 
         }
     </script>
