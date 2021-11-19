@@ -134,7 +134,7 @@
             <input type="submit" value="Add" id="submitData">
         </form>
 
-        <ol class="todos">
+        <ol class="todos" id="todos">
 
         </ol>
     </main>
@@ -143,16 +143,30 @@
     <script>
         // const inputData = document.getElementById('inputData');
         // const addData = document.getElementById('submitData');
-        let todoArray = [];
+        const todoArray = [];
         console.log(todoArray);
 
         document.getElementById('todoForm').onsubmit = function (evenet) {
+            // Pervent Page reload
             evenet.preventDefault();
-
+            // Get input Data & Submit Button
             const inputData = document.getElementById('inputData').value;
             const addData = document.getElementById('submitData');
+
+            // Send input in todoArray
             todoArray.push(inputData);
             console.log(todoArray);
+
+            // Get ol
+            const todos = document.getElementById('todos');
+            // Create New li Element
+            const todoList = document.createElement("li");
+            // Add class todoList in li
+            todoList.classList.add('todoList');
+            todoList.innerText = inputData;
+            // Make Child of todos (ol)
+            todos.appendChild(todoList);
+
         }
     </script>
 </body>
