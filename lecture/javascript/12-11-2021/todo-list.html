@@ -14,7 +14,7 @@
         <button type="submit">Add</button>
     </form>
     <ul id="todos">
-        
+
     </ul>
 
     <script>
@@ -35,15 +35,29 @@
             const deleteButton = document.createElement('button');
             deleteButton.innerText = "Delete";
             todosList.appendChild(deleteButton);
-            deleteButton.onclick = function(){
-                console.log("Before Filter", todos);
-                const filteredArr =  todos.filter(function (arrElement){
-                    return false;
+            const filteredArr = todos.filter(function (arrElement) {
+                    console.log(todoInput, " ", todos);
+                    return todoInput !== arrElement;
                 });
+            // deleteButton.onclick = function () {
+            //     const filteredArr = todos.filter(function (arrElement) {
+            //         console.log(todoInput, " ", todos);
+            //         return todoInput !== arrElement;
+            //     });
+            //     todosList.innerHTML = "";
+                // for (let index = 0; index < todos.length; index++) {
+
+                //     const element = todos[index];
+                //     // console.log(element);
+                //     const newListItem = document.createElement('li');
+                //     newListItem.innerText = todos;
+                //     todosList.appendChild(newListItem);
+                //     console.log(newListItem);
+                // }
                 console.log("After Filter", filteredArr);
-                
+
             };
-            
+
 
 
 
