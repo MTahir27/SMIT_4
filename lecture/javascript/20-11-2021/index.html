@@ -38,11 +38,22 @@
         // name -> Muhammad Tahir
         // localStorage.setItem('name', 'Muhammad Tahir');
         // localStorage.setItem('age', 20);
-        console.log(localStorage.getItem('name'));
-        console.log(localStorage.getItem('age'));
+        // console.log(localStorage.getItem('name'));
+        // console.log(localStorage.getItem('age'));
 
         // console.log(localStorage.removeItem('age'));
-        localStorage.clear();
+        // localStorage.clear();
+
+        const myInfo = {
+            name: "Muhammad Tahir",
+            age: 20,
+        }
+
+        const stringobj = JSON.stringify(myInfo);
+        // debugger;
+        localStorage.setItem('myInfo', stringobj);
+        const orignalObj = JSON.parse(stringobj);
+        console.log(orignalObj);
     </script>
 </body>
 
