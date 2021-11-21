@@ -9,6 +9,26 @@
 </head>
 
 <body>
+    <form id="form">
+        <input type="text" id="input">
+        <input type="submit" value="Add" id="button">
+    </form>
+
+    <script>
+        const form = document.getElementById('form');
+        const input = document.getElementById('input');
+        const button = document.getElementById('button');
+        const arrayData = [];
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const todoData = input.value;
+            console.log(input.value);
+
+            arrayData.push(todoData);
+            console.log(arrayData);
+        });
+    </script>
 
 </body>
 
