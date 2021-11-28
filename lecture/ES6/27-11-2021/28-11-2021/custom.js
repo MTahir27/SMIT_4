@@ -70,3 +70,26 @@ class Human {
 // console.log("My Self: ", mySelf);
 // console.log("My Self2: ", mySelf2);
 // console.log("My Self3: ", mySelf3);
+
+
+// Class Student
+class Student extends Human {
+    // Call Human Class
+    // Add Roll No & Section
+    constructor(name, height, age, rollNo, section) {
+        // To call the Parent Constructor
+        super(name, age, height);
+        this.rollNo = rollNo;
+        this.section = section;
+    }
+
+    changeRollNo(newRollNo) {
+        this.rollNo = newRollNo;
+    }
+};
+
+const student1 = new Student("Tahir", 20, 5.5, 1, "A");
+console.log(student1);
+student1.changeName("Muhammad Tahir")
+student1.changeRollNo(2);
+console.log(student1);
