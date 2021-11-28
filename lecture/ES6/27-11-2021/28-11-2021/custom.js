@@ -1,4 +1,4 @@
-// Tthis Keyword
+// // Tthis Keyword
 // const mySelf = {
 //     name: "Mauhammad Tahir",
 //     changeNmae: function (newName) {
@@ -39,4 +39,4 @@
 
 // console.log(obj.changeName());
 // console.log(obj.a.changeName());
-// Global Object
+// // Global Object
