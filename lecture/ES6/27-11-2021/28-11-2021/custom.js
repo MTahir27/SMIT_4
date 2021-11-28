@@ -56,6 +56,10 @@ class Human {
         this.height = height;
         this.age = age;
     };
+
+    changeName(newName) {
+        this.name = newName;
+    }
     // name, Heght, age
     // Change Name, Height, Age
 };
@@ -63,6 +67,7 @@ class Human {
 const mySelf = new Human("Muhammad Tahir", '5.8', '20');
 const mySelf2 = new Human("Syed Husnain Shah", '5.8', '20');
 const mySelf3 = new Human("Hamza Amir", '5.8', '20');
+mySelf3.changeName("Hassan Asad");
 console.log("My Self: ", mySelf);
 console.log("My Self2: ", mySelf2);
 console.log("My Self3: ", mySelf3);
