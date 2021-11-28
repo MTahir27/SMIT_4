@@ -29,6 +29,55 @@
         // Template literal
         const greetingStringTemplateLiteral = `Wellcome ${firstName} ${lastName}`;
         console.log(greetingStringTemplateLiteral);
+
+        // Husnain, Tahir, Hassan, Hamza
+        const userRollNumber = [23, 53, 25, 64];
+        const userRollNumber2 = [3, 5, 7, 9];
+        const allROllNumber = [...userRollNumber, ...userRollNumber2];
+        const [Husnain, Tahir, Hassan, Hamza] = userRollNumber;
+
+        const myObj = {
+            a: 1,
+            b: 2,
+            c: 0,
+        };
+
+        const mySecondValue = {
+            ...myObj,
+            b: 5,
+            a: 10,
+
+        };
+
+        console.log(myObj);
+        console.log(mySecondValue);
+
+
+        // Pass by value
+
+        // Pass by reference
+
+        const myObjNumber = {
+            a: 1,
+            b: 2,
+        }
+        myObjNumber.a = 3;
+        const otherObj = myObjNumber;
+        console.log('myObj', myObjNumber.a);
+        console.log('otherObj', otherObj.a);
+
+        otherObj.a = 4;
+        console.log('myObj', myObjNumber.a);
+        console.log('otherObj', otherObj.a);
+
+
+        const z = 1;
+
+        function multiply(myVariable) {
+            return myVariable * 2;
+        }
+        console.log("Multiply ", multiply(z));
+        console.log('a :', z);
     </script>
 
 </body>
