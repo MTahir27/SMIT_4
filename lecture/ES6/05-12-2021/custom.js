@@ -1,8 +1,15 @@
-let myProise = new Promise(function (resolve, reject) {
-    let connection = true;
+let myPromise = new Promise(function (resolve, reject) {
+    let connection = false;
     if (connection) {
         resolve("Connected");
     } else {
-        reject("COnnection Failed");
+        reject("Connection Failed");
     }
+});
+
+myPromise.then(function (message) {
+    console.log(message);
+});
+myPromise.catch(function (message) {
+    console.log(message);
 });
