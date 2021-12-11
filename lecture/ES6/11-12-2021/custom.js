@@ -12,3 +12,10 @@ promise1.then(function () {
 }).catch(function () {
     console.log("Function Reject");
 });
+
+const arr = [];
+for (let index = 0; index < 1000; index++) {
+    console.log("Task in Progress");
+    arr.push(index);
+}
+console.log(arr);
