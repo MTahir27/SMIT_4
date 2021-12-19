@@ -1,4 +1,4 @@
-import createUser from "./createNewUser";
+import createUser from "./createNewUser.js";
 
 
 export default {
