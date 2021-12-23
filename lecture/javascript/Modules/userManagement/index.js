@@ -1,10 +1,21 @@
-const name = "Muhammad Tahir";
+// const name = "Muhammad Tahir";
 
-function double(n) {
-    return n * 2;
-};
+// import loginUser from "./loginUser";
+
+// function double(n) {
+//     return n * 2;
+// };
+
+// export {
+//     name,
+//     double,
+// };
+
+// export default function sayName(name) {
+//     console.log(name);
+// }
 
 export {
-    name,
-    double,
-};
+    default as login
+}
+from "./loginUser.js";
