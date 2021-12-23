@@ -1,6 +1,8 @@
-import createUser from "./createNewUser.js";
+import {
+    loginUser
+} from "./loginUser.js";
 
 
 export default {
-    createUser,
+    loginUser,
 }

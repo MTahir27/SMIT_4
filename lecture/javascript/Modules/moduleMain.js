@@ -1,3 +1,9 @@
-import userManagement from "./userManagement/index.js";
+import {
+    loginUser
+} from "./userManagement/index.js";
 
-document.getElementById("createUser").addEventListener("click", createUser);
+
+const createbtn = document.getElementById("createUser")
+createbtn.onclick = () => {
+
+}
