@@ -12,3 +12,17 @@ const number: number = 1;
 const array: string[] = ["One", "Two"];
 // Any
 const anyDataType: any = "234";
+// Multiple Type
+type personType = {
+  name: string;
+  age: number;
+  study: string;
+  hobby: string[];
+};
+
+const person: personType = {
+  name: "Muhammad Tahir",
+  age: 21,
+  study: "BS CS",
+  hobby: ["Web Devlopment", "Backend Dev"],
+};

@@ -11,3 +11,9 @@ var number = 1;
 var array = ["One", "Two"];
 // Any
 var anyDataType = "234";
+var person = {
+    name: "Muhammad Tahir",
+    age: 21,
+    study: "BS CS",
+    hobby: ["Web Devlopment", "Backend Dev"]
+};
