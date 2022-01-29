@@ -5,4 +5,4 @@ console.log("Hello Again");
 function greet(person, date) {
     console.log("Hello ".concat(person, ", today is ").concat(date, "!"));
 }
-greet("Brendan", "abc");
+greet("1", new Date("12-12-2020"));
