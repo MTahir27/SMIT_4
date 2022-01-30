@@ -24,3 +24,11 @@ function add(numOne, numTwo) {
 var addFun = function (num1, num2) {
     return num1 + num2;
 };
+var getFullName = function (person) {
+    return "".concat(person.firstName, " ").concat(person.lastName);
+};
+var myself = {
+    firstName: "Muhammad",
+    lastName: "Tahir"
+};
+getFullName(myself);

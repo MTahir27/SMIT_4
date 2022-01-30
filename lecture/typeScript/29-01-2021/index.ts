@@ -37,3 +37,20 @@ type addFunType = (num1: number, num2: number) => number;
 const addFun: addFunType = (num1, num2) => {
   return num1 + num2;
 };
+
+type personType2 = {
+  firstName: string;
+  lastName: string;
+};
+
+type getFullNameType = (person: personType2) => string;
+
+const getFullName: getFullNameType = (person) =>
+  `${person.firstName} ${person.lastName}`;
+
+const myself = {
+  firstName: "Muhammad",
+  lastName: "Tahir",
+};
+
+getFullName(myself);
