@@ -25,10 +25,27 @@ var addFun = function (num1, num2) {
     return num1 + num2;
 };
 var getFullName = function (person) {
-    return "".concat(person.firstName, " ").concat(person.lastName);
+    if (person.age) {
+        return "".concat(person.firstName, " ").concat(person.lastName, " and age is ").concat(person.age);
+    }
+    else {
+        return "".concat(person.firstName, " ").concat(person.lastName);
+    }
 };
 var myself = {
     firstName: "Muhammad",
     lastName: "Tahir"
 };
-getFullName(myself);
+var myself2 = {
+    firstName: "Muhammad",
+    lastName: "Tahir",
+    age: 21
+};
+var myself3 = {
+    firstName: "Muhammad",
+    lastName: "Tahir",
+    age: "Twenty One"
+};
+console.log(getFullName(myself));
+console.log(getFullName(myself2));
+console.log(getFullName(myself3));

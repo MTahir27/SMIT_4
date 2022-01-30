@@ -41,16 +41,37 @@ const addFun: addFunType = (num1, num2) => {
 type personType2 = {
   firstName: string;
   lastName: string;
+  age?: number | string;
 };
 
 type getFullNameType = (person: personType2) => string;
 
-const getFullName: getFullNameType = (person) =>
-  `${person.firstName} ${person.lastName}`;
+const getFullName: getFullNameType = (person) => {
+  if (person.age) {
+    return `${person.firstName} ${person.lastName} and age is ${person.age}`;
+  } else {
+    return `${person.firstName} ${person.lastName}`;
+  }
+};
 
 const myself = {
   firstName: "Muhammad",
   lastName: "Tahir",
 };
 
-getFullName(myself);
+const myself2 = {
+  firstName: "Muhammad",
+  lastName: "Tahir",
+  age: 21,
+};
+
+const myself3 = {
+  firstName: "Muhammad",
+  lastName: "Tahir",
+  age: "Twenty One",
+};
+
+console.log(getFullName(myself));
+
+console.log(getFullName(myself2));
+console.log(getFullName(myself3));
