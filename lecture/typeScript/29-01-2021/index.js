@@ -17,3 +17,10 @@ var person = {
     study: "BS CS",
     hobby: ["Web Devlopment", "Backend Dev"]
 };
+// Functions
+function add(numOne, numTwo) {
+    return numOne + numTwo;
+}
+var addFun = function (num1, num2) {
+    return num1 + num2;
+};

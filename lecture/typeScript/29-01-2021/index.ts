@@ -26,3 +26,14 @@ const person: personType = {
   study: "BS CS",
   hobby: ["Web Devlopment", "Backend Dev"],
 };
+
+// Functions
+function add(numOne: number, numTwo: number): number {
+  return numOne + numTwo;
+}
+
+// Arrow Function
+type addFunType = (num1: number, num2: number) => number;
+const addFun: addFunType = (num1, num2) => {
+  return num1 + num2;
+};
